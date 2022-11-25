@@ -5,43 +5,38 @@
   </head>
   <body>
     <nav id="navbar">
-      <header>JS Documentation</header>
+      <header>Python Documentation</header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li>
-          <a class="nav-link" href="#What_you_should_already_know"
-            >What you should already know</a
+          <a class="nav-link" href="#Why_should_you_use_Python?"
+            >Why should you use Python?</a
           >
         </li>
         <li>
-          <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+          <a class="nav-link" href="#Python_syntax_compared_to_other_programming_languages"
+            >Python syntax compared to other programming languages</a
           >
         </li>
-        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
         <li><a class="nav-link" href="#Variables">Variables</a></li>
         <li>
-          <a class="nav-link" href="#Declaring_variables"
-            >Declaring variables</a
+          <a class="nav-link" href="#Declaring_Variables"
+            >Declaring Variables</a
           >
         </li>
-        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li><a class="nav-link" href="#Variable_Names">Variable Names</a></li>
         <li>
-          <a class="nav-link" href="#Global_variables">Global variables</a>
+          <a class="nav-link" href="#Global_Variables">Global Variables</a>
         </li>
-        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Local_Variables">Local Variables</a></li>
         <li><a class="nav-link" href="#Data_types">Data types</a></li>
         <li>
           <a class="nav-link" href="#if...else_statement"
             >if...else statement</a
           >
         </li>
-        <li><a class="nav-link" href="#while_statement">while statement</a></li>
-        <li>
-          <a class="nav-link" href="#Function_declarations"
-            >Function declarations</a
-          >
-        </li>
+        <li><a class="nav-link" href="#while_loop">while loop</a></li>
         <li><a class="nav-link" href="#Reference">Reference</a></li>
       </ul>
     </nav>
@@ -50,405 +45,393 @@
         <header>Introduction</header>
         <article>
           <p>
-            JavaScript is a cross-platform, object-oriented scripting language.
-            It is a small and lightweight language. Inside a host environment
-            (for example, a web browser), JavaScript can be connected to the
-            objects of its environment to provide programmatic control over
-            them.
+            Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
           </p>
 
           <p>
-            JavaScript contains a standard library of objects, such as Array,
-            Date, and Math, and a core set of language elements such as
-            operators, control structures, and statements. Core JavaScript can
-            be extended for a variety of purposes by supplementing it with
-            additional objects; for example:
+            Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
           </p>
           <ul>
             <li>
-              Client-side JavaScript extends the core language by supplying
-              objects to control a browser and its Document Object Model (DOM).
-              For example, client-side extensions allow an application to place
-              elements on an HTML form and respond to user events such as mouse
-              clicks, form input, and page navigation.
+              Python can be used on a server to create web applications.
             </li>
             <li>
-              Server-side JavaScript extends the core language by supplying
-              objects relevant to running JavaScript on a server. For example,
-              server-side extensions allow an application to communicate with a
-              database, provide continuity of information from one invocation to
-              another of the application, or perform file manipulations on a
-              server.
+              Python can be used alongside software to create workflows.
+            </li>
+            <li>
+              Python can connect to database systems. It can also read and modify files.
+            </li>
+            <li>
+              Python can be used to handle big data and perform complex mathematics.
+            </li>
+            <li>
+              Python can be used for rapid prototyping, or for production-ready software development.
             </li>
           </ul>
         </article>
       </section>
-      <section class="main-section" id="What_you_should_already_know">
-        <header>What you should already know</header>
+      <section class="main-section" id="Why_should_you_use_Python?">
+        <header>Why should you use Python?</header>
         <article>
-          <p>This guide assumes you have the following basic background:</p>
-
           <ul>
             <li>
-              A general understanding of the Internet and the World Wide Web
-              (WWW).
+              Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
             </li>
-            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <li>Python has a simple syntax similar to the English language.</li>
             <li>
-              Some programming experience. If you are new to programming, try
-              one of the tutorials linked on the main page about JavaScript.
+              Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+            </li>
+            <li>
+              Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+            </li>
+            <li>
+              Python can be treated in a procedural way, an object-oriented way or a functional way.
             </li>
           </ul>
         </article>
       </section>
-      <section class="main-section" id="JavaScript_and_Java">
-        <header>JavaScript and Java</header>
+      <section class="main-section" id="Python_syntax_compared_to_other_programming_languages">
+        <header>Python syntax compared to other programming languages</header>
         <article>
-          <p>
-            JavaScript and Java are similar in some ways but fundamentally
-            different in some others. The JavaScript language resembles Java but
-            does not have Java's static typing and strong type checking.
-            JavaScript follows most Java expression syntax, naming conventions
-            and basic control-flow constructs which was the reason why it was
-            renamed from LiveScript to JavaScript.
-          </p>
-
-          <p>
-            In contrast to Java's compile-time system of classes built by
-            declarations, JavaScript supports a runtime system based on a small
-            number of data types representing numeric, Boolean, and string
-            values. JavaScript has a prototype-based object model instead of the
-            more common class-based object model. The prototype-based model
-            provides dynamic inheritance; that is, what is inherited can vary
-            for individual objects. JavaScript also supports functions without
-            any special declarative requirements. Functions can be properties of
-            objects, executing as loosely typed methods.
-          </p>
-          <p>
-            JavaScript is a very free-form language compared to Java. You do not
-            have to declare all variables, classes, and methods. You do not have
-            to be concerned with whether methods are public, private, or
-            protected, and you do not have to implement interfaces. Variables,
-            parameters, and function return types are not explicitly typed.
-          </p>
+            <li>
+              Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+            </li>
+            <li>
+              Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+            </li>
+            <li>
+              Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+            </li>
         </article>
       </section>
-      <section class="main-section" id="Hello_world">
-        <header>Hello world</header>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
         <article>
-          To get started with writing JavaScript, open the Scratchpad and write
-          your first "Hello world" JavaScript code:
+          Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed. Open a text editor of your choice and write your first "Hello world" Python code:
           <code
-            >function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");
+            >print("Hello, World!")
           </code>
-
-          Select the code in the pad and hit Ctrl+R to watch it unfold in your
-          browser!
+Save the file as [file name of your choice].py and use a compiler to run the code to see the output!
         </article>
       </section>
       <section class="main-section" id="Variables">
         <header>Variables</header>
         <p>
-          You use variables as symbolic names for values in your application.
-          The names of variables, called identifiers, conform to certain rules.
+          Python has no command for declaring a variable.
         </p>
         <p>
-          A JavaScript identifier must start with a letter, underscore (_), or
-          dollar sign ($); subsequent characters can also be digits (0-9).
-          Because JavaScript is case sensitive, letters include the characters
-          "A" through "Z" (uppercase) and the characters "a" through "z"
-          (lowercase).
-        </p>
-        <p>
-          You can use ISO 8859-1 or Unicode letters such as å and ü in
-          identifiers. You can also use the Unicode escape sequences as
-          characters in identifiers. Some examples of legal names are
-          Number_hits, temp99, and _name.
+         A variable is created the moment you first assign a value to it.
         </p>
       </section>
-      <section class="main-section" id="Declaring_variables">
-        <header>Declaring variables</header>
+      <section class="main-section" id="Declaring_Variables">
+        <header>Declaring Variables</header>
         <article>
-          You can declare a variable in three ways:
           <p>
-            With the keyword var. For example, <code>var x = 42.</code> This
-            syntax can be used to declare both local and global variables.
+            As said in the preceding section, you just have to assign values to a variable name of your choice. For instance, you can create an x value by giving it a value as such:<code>x = 5</code> This
           </p>
           <p>
-            By simply assigning it a value. For example,
-            <code>x = 42.</code> This always declares a global variable. It
-            generates a strict JavaScript warning. You shouldn't use this
-            variant.
+            This can also apply for other data types, such as a string, but they must be enclosed in quotation marks.
+            <code>y = "John"</code> 
           </p>
           <p>
-            With the keyword let. For example,<code> let y = 13.</code> This
-            syntax can be used to declare a block scope local variable. See
-            Variable scope below.
+            You can use the print command to check the output as such:<code> print(x)
+print(y)</code> Try it out in your python compiler!
           </p>
         </article>
       </section>
-      <section class="main-section" id="Variable_scope">
-        <header>Variable scope</header>
+      <section class="main-section" id="Variable_Names">
+        <header>Variable Names</header>
         <article>
           <p>
-            When you declare a variable outside of any function, it is called a
-            global variable, because it is available to any other code in the
-            current document. When you declare a variable within a function, it
-            is called a local variable, because it is available only within that
-            function.
+            A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
           </p>
+          <li>
+              A variable name must start with a letter or the underscore character.
+          </li>
+          <li>
+              A variable name cannot start with a number.
+          </li>
+          <li>
+              A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+          </li>
+          <li>
+              Variable names are case-sensitive (age, Age and AGE are three different variables). 
+          </li>
 
           <p>
-            JavaScript before ECMAScript 2015 does not have block statement
-            scope; rather, a variable declared within a block is local to the
-            function (or global scope) that the block resides within. For
-            example the following code will log 5, because the scope of x is the
-            function (or global context) within which x is declared, not the
-            block, which in this case is an if statement.
+            Here are examples of legal variable names:
           </p>
-          <code>if (true) { var x = 5; } console.log(x); // 5</code>
+
+          <code>myvar = "John"
+                my_var = "John"
+                _my_var = "John"
+                myVar = "John"
+                MYVAR = "John"
+                myvar2 = "John"
+          </code>
           <p>
-            This behavior changes, when using the let declaration introduced in
-            ECMAScript 2015.
+            Here are examples of illegal variable names:
           </p>
 
           <code
-            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-            not defined</code
-          >
+            >2myvar = "John"
+             my-var = "John"
+             my var = "John"
+          </code>
         </article>
       </section>
-      <section class="main-section" id="Global_variables">
-        <header>Global variables</header>
+      <section class="main-section" id="Global_Variables">
+        <header>Global Variables</header>
         <article>
           <p>
-            Global variables are in fact properties of the global object. In web
-            pages the global object is window, so you can set and access global
-            variables using the window.variable syntax.
+            Variables that are created outside of a function (as in all of the examples above) are known as global variables.
           </p>
 
           <p>
-            Consequently, you can access global variables declared in one window
-            or frame from another window or frame by specifying the window or
-            frame name. For example, if a variable called phoneNumber is
-            declared in a document, you can refer to this variable from an
-            iframe as parent.phoneNumber.
+Global variables can be used by everyone, both inside of functions and outside.
           </p>
+          <p>
+Here is an example of a global variable being created outside a function and used inside the function:
+          </p>
+
+          <code
+            >x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+          </code>
+
         </article>
       </section>
-      <section class="main-section" id="Constants">
-        <header>Constants</header>
+      <section class="main-section" id="Local_Variables">
+        <header>Local Variables</header>
         <article>
           <p>
-            You can create a read-only, named constant with the const keyword.
-            The syntax of a constant identifier is the same as for a variable
-            identifier: it must start with a letter, underscore or dollar sign
-            and can contain alphabetic, numeric, or underscore characters.
+            If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.
           </p>
 
-          <code>const PI = 3.14;</code>
-          <p>
-            A constant cannot change value through assignment or be re-declared
-            while the script is running. It has to be initialized to a value.
-          </p>
+          <code>x = "awesome"
 
+def myfunc():
+  x = "fantastic"</code>
           <p>
-            The scope rules for constants are the same as those for let block
-            scope variables. If the const keyword is omitted, the identifier is
-            assumed to represent a variable.
-          </p>
-
-          <p>
-            You cannot declare a constant with the same name as a function or
-            variable in the same scope. For example:
+            The code snippet above shows the creation of a local variable.
           </p>
 
           <code
-            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-            //statements }</code
-          >
-          However, object attributes are not protected, so the following
-          statement is executed without problems.
+            >x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+</code>
+          <p>If we call the function, it will make use of the local variable. Try to test the code and see for yourself.
+          </p>
           <code
-            >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-            "otherValue";</code
-          >
+            >x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+</code>
+        <p>The code above shows the use of both the global and local variable.
+        </p>
+
         </article>
       </section>
       <section class="main-section" id="Data_types">
         <header>Data types</header>
         <article>
-          <p>The latest ECMAScript standard defines seven data types:</p>
+          <p>Python has the following data types built-in by default, in these categories:</p>
           <ul>
             <li>
-              <p>Six data types that are primitives:</p>
-              <ul>
-                <li>Boolean. true and false.</li>
-                <li>
-                  null. A special keyword denoting a null value. Because
-                  JavaScript is case-sensitive, null is not the same as Null,
-                  NULL, or any other variant.
-                </li>
-                <li>
-                  undefined. A top-level property whose value is undefined.
-                </li>
-                <li>Number. 42 or 3.14159.</li>
-                <li>String. "Howdy"</li>
-                <li>
-                  Symbol (new in ECMAScript 2015). A data type whose instances
-                  are unique and immutable.
-                </li>
-              </ul>
+              Text Type:  str
             </li>
-
-            <li>and Object</li>
+            <li>
+              Numeric Types:  int, float, complex
+            </li>
+            <li>
+              Sequence Types: list, tuple, range
+            </li>
+            <li>
+              Mapping Type: dict
+            </li>
+            <li>
+              Set Types:  set, frozenset
+            </li>
+            <li>
+              Boolean Type: bool
+            </li>
+            <li>
+              Binary Types: bytes, bytearray, memoryview
+            </li>
+            <li>
+              None Type:  NoneType
+            </li>
           </ul>
-          Although these data types are a relatively small amount, they enable
-          you to perform useful functions with your applications. Objects and
-          functions are the other fundamental elements in the language. You can
-          think of objects as named containers for values, and functions as
-          procedures that your application can perform.
+
+          <p>
+            You can get the data type of any object by using the type() function:
+          </p>
+
+          <code>x = 5
+print(type(x))</code>
+
+          <p>
+            If you want to specify the data type, you can use the following constructor functions:
+          </p>
+
+          <code>x = str("Hello World")
+            x = int(20)
+            x = float(20.5)
+            x = complex(1j)
+            x = list(("apple", "banana", "cherry"))
+            x = tuple(("apple", "banana", "cherry"))
+            x = range(6)
+            x = dict(name="John", age=36)
+            x = set(("apple", "banana", "cherry"))
+            x = frozenset(("apple", "banana", "cherry"))
+            x = bool(5)
+            x = bytes(5)
+            x = bytearray(5)
+            x = memoryview(bytes(5))
+          </code>
+
         </article>
       </section>
       <section class="main-section" id="if...else_statement">
         <header>if...else statement</header>
         <article>
-          Use the if statement to execute a statement if a logical condition is
-          true. Use the optional else clause to execute a statement if the
-          condition is false. An if statement looks as follows:
+          Python supports the usual logical conditions from mathematics:
 
-          <code>if (condition) { statement_1; } else { statement_2; }</code>
-          condition can be any expression that evaluates to true or false. See
-          Boolean for an explanation of what evaluates to true and false. If
-          condition evaluates to true, statement_1 is executed; otherwise,
-          statement_2 is executed. statement_1 and statement_2 can be any
-          statement, including further nested if statements.
-          <p>
-            You may also compound the statements using else if to have multiple
-            conditions tested in sequence, as follows:
-          </p>
-          <code
-            >if (condition_1) { statement_1; } else if (condition_2) {
-            statement_2; } else if (condition_n) { statement_n; } else {
-            statement_last; }
+          <li>
+              Equals: a == b
+          </li>
+          <li>
+              Not Equals: a != b
+          </li>
+          <li>
+              Less than: a < b
+          </li>
+          <li>
+              Less than or equal to: a <= b
+          </li>
+          <li>
+              Greater than: a > b
+          </li>
+          <li>
+              Greater than or equal to: a >= b
+          </li>
+
+          <code>if (condition):
+            statement
           </code>
-          In the case of multiple conditions only the first logical condition
-          which evaluates to true will be executed. To execute multiple
-          statements, group them within a block statement ({ ... }) . In
-          general, it's good practice to always use block statements, especially
-          when nesting if statements:
+          Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.
+          <p>
+            Every statement below if statements must be indented from the left.
+          </p>
+
+          The <b>elif</b> keyword is pythons way of saying "if the previous conditions were not true, then try this condition".
 
           <code
-            >if (condition) { statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true; } else {
-            statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false; }</code
+            >if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+          </code>
+
+          The <b>else</b> keyword catches anything which isn't caught by the preceding conditions.
+
+          <code
+            >if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")</code
           >
-          It is advisable to not use simple assignments in a conditional
-          expression, because the assignment can be confused with equality when
-          glancing over the code. For example, do not use the following code:
-          <code>if (x = y) { /* statements here */ }</code> If you need to use
-          an assignment in a conditional expression, a common practice is to put
-          additional parentheses around the assignment. For example:
+          If you have only one statement to execute, you can put it on the same line as the if statement.
+          <code>if a > b: print("a is greater than b")</code> 
 
-          <code>if ((x = y)) { /* statements here */ }</code>
+          If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:
+
+          <code>print("A") if a > b else print("B")</code>
+
+          You can also have multiple else statements on the same line:
+
+          <code>print("A") if a > b else print("=") if a == b else print("B")</code>
         </article>
       </section>
-      <section class="main-section" id="while_statement">
-        <header>while statement</header>
+      <section class="main-section" id="while_loop">
+        <header>while loop</header>
         <article>
-          A while statement executes its statements as long as a specified
-          condition evaluates to true. A while statement looks as follows:
+          With the while loop we can execute a set of statements as long as a condition is true.
 
-          <code>while (condition) statement</code> If the condition becomes
-          false, statement within the loop stops executing and control passes to
-          the statement following the loop.
-
+          <code>i = 1
+while i < 6:
+  print(i)
+  i += 1</code> 
+  
+  The code above will print i as long as i is less than 6.
           <p>
-            The condition test occurs before statement in the loop is executed.
-            If the condition returns true, statement is executed and the
-            condition is tested again. If the condition returns false, execution
-            stops and control is passed to the statement following while.
+            The while loop requires relevant variables to be ready, in this example an indexing variable must be defined, i, which has been set to 1.
           </p>
 
           <p>
-            To execute multiple statements, use a block statement ({ ... }) to
-            group those statements.
+            With the <b>break</b> statement we can stop the loop even if the while condition is true:
           </p>
 
-          Example:
+          <code>i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1</code>
+  
+  When i is equal to 3, the loop will stop.
 
           <p>
-            The following while loop iterates as long as n is less than three:
+            With the <b>continue</b> statement we can stop the current iteration, and continue with the next:
           </p>
 
-          <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+          <code>i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)</code>
+  
+  If i is equal to three, the program will continue to the nest iteration, if there is one.
           <p>
-            With each iteration, the loop increments n and adds that value to x.
-            Therefore, x and n take on the following values:
+            With the else statement we can run a block of code once when the condition no longer is true:
           </p>
 
-          <ul>
-            <li>After the first pass: n = 1 and x = 1</li>
-            <li>After the second pass: n = 2 and x = 3</li>
-            <li>After the third pass: n = 3 and x = 6</li>
-          </ul>
-          <p>
-            After completing the third pass, the condition n &lt; 3 is no longer
-            true, so the loop terminates.
-          </p>
+          <code>i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")</code>
+Once i is iterated to be greater than 6, "i is no longer less than 6" will be displayed.
         </article>
-      </section>
-      <section class="main-section" id="Function_declarations">
-        <header>Function declarations</header>
-        <article>
-          A function definition (also called a function declaration, or function
-          statement) consists of the function keyword, followed by:
-
-          <ul>
-            <li>The name of the function.</li>
-            <li>
-              A list of arguments to the function, enclosed in parentheses and
-              separated by commas.
-            </li>
-            <li>
-              The JavaScript statements that define the function, enclosed in
-              curly brackets, { }.
-            </li>
-          </ul>
-          <p>
-            For example, the following code defines a simple function named
-            square:
-          </p>
-
-          <code>function square(number) { return number * number; }</code>
-          <p>
-            The function square takes one argument, called number. The function
-            consists of one statement that says to return the argument of the
-            function (that is, number) multiplied by itself. The return
-            statement specifies the value returned by the function.
-          </p>
-          <code>return number * number;</code>
-          <p>
-            Primitive parameters (such as a number) are passed to functions by
-            value; the value is passed to the function, but if the function
-            changes the value of the parameter, this change is not reflected
-            globally or in the calling function.
-          </p>
-        </article>
-      </section>
       <section class="main-section" id="Reference">
         <header>Reference</header>
         <article>
           <ul>
             <li>
-              All the documentation in this page is taken from
+              Source:
               <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                href="https://www.w3schools.com/python/default.asp"
                 target="_blank"
-                >MDN</a
+                >W3Schools</a
               >
             </li>
           </ul>
